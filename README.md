@@ -10,3 +10,6 @@ At least NUIST web VPN can access any website conveniently by this.
 Because I don't want to download any clients or plug-ins.
 
 Inspired by: https://github.com/qwertycxz/NUIST-VPN
+
+TODO:
+1. 或许会考虑写一个快捷访问？放一些常用的链接在页面里。但是已经懒得动了呢。
