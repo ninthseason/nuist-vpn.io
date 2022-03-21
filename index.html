@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>连 - Len</title>
+    <style>
+        .search-box {
+            text-align: center;
+            margin-top: 20%;
+            user-select: none;
+        }
+
+        .search-box input {
+            text-align: center;
+            width: 30%;
+            height: 28px;
+            font-size: 14px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            padding: 4px 7px;
+            transition: 100ms;
+        }
+        .search-box input:focus {
+            outline: none;
+            border-color: rgba(82, 168, 236, 0.8);
+            box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(82, 168, 236, 0.6);
+        }
+
+        .bg {
+            background-color: #fff;
+            background-size: 100% 1.2em;
+            background-image: linear-gradient(#eee 0.05em, transparent 0.05em);
+        }
+    </style>
+</head>
+<body class="bg">
+<div class="search-box">
+    <label>
+        <input id="inputBox" type="text" placeholder="输入网址">
+    </label>
+</div>
+<script>
+    document.getElementById("inputBox").onkeydown = function (e) {
+        let url = "https://"
+        if (e.key === "Enter") {
+            if (e.target.value.slice(0, 4) === "http") {
+                url = e.target.value;
+            } else {
+                url += e.target.value;
+            }
+            // console.log(url)
+            window.location.href = url;
+        }
+    }
+</script>
+</body>
+</html>
