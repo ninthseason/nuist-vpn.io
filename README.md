@@ -3,13 +3,12 @@ Provide a page for NUIST's webvpn to redirect.
 
 https://client.vpn.nuist.edu.cn/https/webvpn458a6c9e683935e4087e8d5e940345f7a066dcd64d292a2bb2f1cc7d296fd971/nuist-vpn.io/
 
-A simple project.
+Usage：
 
-At least NUIST web VPN can access any website conveniently by this.
+1. Open the url above.
+2. Login in your VPN account.
+3. Input the url you want to access through VPN. (https by default)
 
-Because I don't want to download any clients or plug-ins.
+Tips:
 
-Inspired by: https://github.com/qwertycxz/NUIST-VPN
-
-TODO:
-1. 或许会考虑写一个快捷访问？放一些常用的链接在页面里。但是已经懒得动了呢。
+You can input `http://example.com` to access through http.
